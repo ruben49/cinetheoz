@@ -8,7 +8,7 @@ class HomeController extends CI_Controller {
 
     public function index(){
         $this->load->view('sitio/shared/header');
-        $this->load->view('sitio/welcome_message');
+        $this->load->view('sitio/Home');
         $this->load->view('sitio/shared/footer');
     }
     
