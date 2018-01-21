@@ -8,7 +8,10 @@ class PanelController extends CI_Controller{
     }
     
     function index(){
+        $this->load->view('cpanel/shared/Header');
+        $this->load->view('cpanel/shared/Menu');
         $this->load->view('cpanel/Home');
+        $this->load->view('cpanel/shared/Footer');
     }
     
 }
