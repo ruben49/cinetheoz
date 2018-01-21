@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <meta charset="utf-8">
 
 
-<html lang="es">
+ 
 
 <style type="text/css">
 	
