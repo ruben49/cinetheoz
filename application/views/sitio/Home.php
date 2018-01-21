@@ -1,12 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<!DOCTYPE html>
-<meta charset="utf-8">
-
-
-<html lang="es">
-    <script src="<?php echo base_url();?>js/jssor.slider-26.9.0.min.js" type="text/javascript"></script>
+ 
+ 
+    <script src="<?php echo base_url();?>assets/js/jssor.slider-26.9.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_1_slider_init = function() {
 
@@ -129,18 +126,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
             <div data-p="225.00">
-                <img data-u="image" src="<?php echo base_url();?>img/001.jpg" />
+                <img data-u="image" src="<?php echo base_url();?>assets/img/001.jpg" />
                
             </div>
             <div data-p="225.00">
-                <img data-u="image" src="<?php echo base_url();?>img/002.jpg" />
+                <img data-u="image" src="<?php echo base_url();?>assets/img/002.jpg" />
             </div>
             <div data-p="225.00">
-                <img data-u="image" src="<?php echo base_url();?>img/003.jpg" />
+                <img data-u="image" src="<?php echo base_url();?>assets/img/003.jpg" />
          
              
             </div>

@@ -10,19 +10,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<link href="<?php echo base_url();?>application/views/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>application/views/template/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php echo base_url();?>application/views/template/css/contactstyle.css" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php echo base_url();?>css/faqstyle.css" type="text/css" media="all" />
-<link href="<?php echo base_url();?>application/views/template/css/single.css" rel='stylesheet' type='text/css' />
-<link href="<?php echo base_url();?>application/views/template/css/medile.css" rel='stylesheet' type='text/css' />
-<link href="<?php echo base_url();?>application/views/template/css/jquery.slidey.min.css" rel="stylesheet">
-<link href="<?php echo base_url();?>application/views/template/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php echo base_url();?>application/views/template/css/font-awesome.min.css" />
-<script type="text/javascript" src="<?php echo base_url();?>application/views/template/js/jquery-2.1.4.min.js"></script>
-<link href="<?php echo base_url();?>application/views/template/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
-<script src="<?php echo base_url();?>application/views/template/js/owl.carousel.js"></script>
-<LINK REL="Shortcut Icon" HREF="<?php echo base_url();?>application/views/template/img/icono.png"> 
+<link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/contactstyle.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/faqstyle.css" type="text/css" media="all" />
+ <script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-2.1.4.min.js"></script>
+<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+<link href="<?php echo base_url();?>assets/css/single.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url();?>assets/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url();?>assets/css/jquery.slidey.min.css" rel="stylesheet">
+<link href="<?php echo base_url();?>assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome.min.css" />
+
+<link href="<?php echo base_url();?>assets/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<script src="<?php echo base_url();?>assets/js/owl.carousel.js"></script>
+<LINK REL="Shortcut Icon" HREF="<?php echo base_url();?>assets/img/icono.png"> 
 <script>
 	$(document).ready(function() { 
 		$("#owl-demo").owlCarousel({
@@ -35,6 +37,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 
 		});
 	 
+                $(".dropdown").hover(            
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                        $(this).toggleClass('open');        
+                    },
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                        $(this).toggleClass('open');       
+                    }
+                 );
+         
+         	$().UItoTop({ easingType: 'easeOutQuart' });
 	}); 
 </script> 
 
@@ -171,31 +185,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	
 	
-	<script src="<?php echo base_url();?>js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
-</script>
+
+ 
 <!-- //Bootstrap Core JavaScript -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
+ 
 <!-- //nav -->
 <!-- banner -->
 	
