@@ -68,7 +68,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="w3l_sign_in_register">
 				<ul>
 					<li><i class="fa fa-phone" aria-hidden="true"></i> (42) 222 4276</li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Entrar</a></li>
+					<!-- <li><a href="#" data-toggle="modal" data-target="#myModal">Entrar</a></li>-->
+                                        <li><a href="<?php echo base_url();?>PanelController/index" >Entrar</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

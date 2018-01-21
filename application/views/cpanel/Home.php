@@ -44,7 +44,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo base_url();?>application/views/template/img/index2.html" class="logo">
+    <a href="<?php echo base_url();?>assets/img/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>o</b>Z</span>
       <!-- logo for regular state and mobile devices -->
@@ -68,13 +68,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url();?>application/views/template/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="<?php echo base_url();?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url();?>application/views/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url();?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
              
               </li>
@@ -106,7 +106,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url();?>application/views/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo base_url();?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -137,10 +137,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
+             <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -151,10 +151,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
+            <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
+             <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
           </ul>
         </li>
            <li class="treeview">
@@ -323,41 +323,41 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 3.3.7 -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/raphael/raphael.min.js"></script>
-<script src="<?php echo base_url();?>application/views/template/bower_components/morris.js/morris.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/raphael/raphael.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/morris.js/morris.min.js"></script>
 <!-- Sparkline -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
-<script src="<?php echo base_url();?>application/views/template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="<?php echo base_url();?>application/views/template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="<?php echo base_url();?>assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="<?php echo base_url();?>assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/moment/min/moment.min.js"></script>
-<script src="<?php echo base_url();?>application/views/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/moment/min/moment.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="<?php echo base_url();?>assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src="<?php echo base_url();?>application/views/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="<?php echo base_url();?>assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url();?>assets/application/views/template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="<?php echo base_url();?>application/views/template/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="<?php echo base_url();?>assets/application/views/template/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url();?>application/views/template/dist/js/adminlte.min.js"></script>
+<script src="<?php echo base_url();?>assets/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo base_url();?>application/views/template/dist/js/pages/dashboard.js"></script>
+<script src="<?php echo base_url();?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url();?>application/views/template/dist/js/demo.js"></script>
+<script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
 </body>
 </html>
