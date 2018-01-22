@@ -1,6 +1,6 @@
 <?php
 
-class ClienteController  extends CI_Controller{
+class Usuario_ClienteController  extends CI_Controller{
 
     function __construct(){
         parent::__construct();

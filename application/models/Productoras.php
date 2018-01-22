@@ -1,16 +1,17 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class Productoras extends CI_Model{
 
-/**
- * Description of Productoras
- *
- * @author ruben
- */
-class Productoras {
-    //put your code here
+    function __construct(){
+        parent::__construct();
+
+    }
+    
+    public function guardar($param){
+        $campos = array(
+            'descripcion' =>  $param['descripcion']
+        );	
+        $this-> db->insert('descripcion	', $campos);   
+    }
 }

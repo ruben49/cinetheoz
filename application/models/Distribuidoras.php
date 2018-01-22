@@ -1,18 +1,21 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
  
-class Distribuidoras extends CI_Controller{
+class Distribuidoras extends CI_Model{
 
     function __construct(){
         parent::__construct();
-    
+
     }
     
-    function index(){
-        $this->load->view('cpanel/shared/Header');
-        $this->load->view('cpanel/shared/Menu');
-        $this->load->view('cpanel/Distribuidoras/Lista_Distribuidoras');
-        $this->load->view('cpanel/shared/Footer');
+    
+    public function guardar($param){
+        $campos = array(
+        'descripcion' =>  $param['descripcion']
+        );
+
+        $this-> db->insert('descripcion', $campos);   
     }
+    
     
 }

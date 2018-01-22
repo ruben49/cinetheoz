@@ -18,7 +18,7 @@ class ProductorasController extends CI_Controller{
     function ingresar(){
         
         $descripcion = $this->input->post('descripcion');
-        $resul =   $this->Productoras->login($descripcion);
+        $resul =   $this->Productoras->insert($descripcion);
         
         if($resul == 1){
             echo "1";
