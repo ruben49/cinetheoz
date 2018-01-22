@@ -1,16 +1,18 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
+class Distribuidoras extends CI_Controller{
 
-/**
- * Description of Distribuidoras
- *
- * @author ruben
- */
-class Distribuidoras {
-    //put your code here
+    function __construct(){
+        parent::__construct();
+    
+    }
+    
+    function index(){
+        $this->load->view('cpanel/shared/Header');
+        $this->load->view('cpanel/shared/Menu');
+        $this->load->view('cpanel/Distribuidoras/Lista_Distribuidoras');
+        $this->load->view('cpanel/shared/Footer');
+    }
+    
 }
