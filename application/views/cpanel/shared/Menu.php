@@ -25,154 +25,18 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MANTENEDORES</li>
-      
+        <li class="header">MANTENEDORES</li> 
         
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>USUARIOS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>assets/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>assets/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>CLIENTES</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>assets/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>assets/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>assets/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-           <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>PELICULAS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-           <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>FUNCION</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-            <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>application/views/template/pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>SUCURSAL</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-         
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-           <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>DIRECTORES</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-      
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-           <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>AÑO</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-           
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>GENERO</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-           
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>PAIS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-           
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>PRODUCTORAS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url();?>pages/forms/general.html"><i class="fa fa-circle-o"></i> Ingresar</a></li>
-           
-            <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Buscar</a></li>
-             <li><a href="<?php echo base_url();?>pages/forms/editors.html"><i class="fa fa-circle-o"></i>Eliminar</a></li>
-          </ul>
-        </li>
-       
-        
-        
-       
-    
+        <li><a href="<?php echo base_url();?>ProductorasController/index"><i class="fa fa-circle-o"></i> Productoras</a></li>
+        <li><a href="<?php echo base_url();?>DirectoresController/index"><i class="fa fa-circle-o"></i> Directores</a></li>
+        <li><a href="<?php echo base_url();?>DistribuidorasController/index"><i class="fa fa-circle-o"></i> Distribuidoras</a></li>
+        <li><a href="<?php echo base_url();?>GeneroController/index"><i class="fa fa-circle-o"></i> Genero</a></li>
+        <li><a href="<?php echo base_url();?>SucursalesController/index"><i class="fa fa-circle-o"></i> Sucursal</a></li>
+        <li><a href="<?php echo base_url();?>FuncionesController/index"><i class="fa fa-circle-o"></i> Funciones</a></li>
+        <li><a href="<?php echo base_url();?>AccesosController/index"><i class="fa fa-circle-o"></i> Accesos </a></li> 
+        <li><a href="<?php echo base_url();?>Perfil_UsuarioController/index"><i class="fa fa-circle-o"></i> Perfiles de Usuarios</a></li>
+        <li><a href="<?php echo base_url();?>UsuariosController/index"><i class="fa fa-circle-o"></i> Usuarios del CPanel</a></li>
+        <li><a href="<?php echo base_url();?>PaisController/index"><i class="fa fa-circle-o"></i> Pa&iacute;ses</a></li>
         
       </ul>
     </section>
