@@ -14,4 +14,19 @@ class Productoras extends CI_Model{
         );	
         $this-> db->insert('descripcion	', $campos);   
     }
+    
+    public function obtenerProductoras(){
+        $this->db->select('*');
+        $this->db->from('Productoras');
+        
+        $query = $this->db->get();
+        
+        if ( $query->num_rows() > 0 ){
+            
+            $row = $query->row_array();
+            return $row;
+        } 
+         
+    }
+    
 }

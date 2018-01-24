@@ -11,6 +11,7 @@ class PaisController extends CI_Controller {
     public function index(){
         $this->load->view('sitio/shared/header');
         $this->load->view('sitio/Home');
+        $this->load->view('cpanel/shared/alert-window');
         $this->load->view('sitio/shared/footer');
     }
 }
