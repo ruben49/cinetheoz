@@ -1,30 +1,30 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class Clientes extends CI_Model{
+class Usuario_Cliente extends CI_Model{
 
-    function __construct(){
+     function __construct(){
         parent::__construct();
-
+        $this->load->library('session');
     }
 
     
     public function login($usu,$pass){
     
-        $this->db->select('idUsuarioCliente, nombres, apellidos, direccion, ciudad, email,');
+        $this->db->select('idUsuarioCliente, nombres, apellidos, direccion, ciudad,email');
         $this->db->from('usuario_cliente');
         $this->db->where('login', $usu);
         $this->db->where('contrasena',$pass);
 
         $resul = $this->db->get();
 
-        if ($resul->num_rows()==1) {
+        if ($resul->num_rows() == 1) {
             $res = $resul->row();
 
             $s_cliente = array('s_idUsuarioCliente' => $res ->idUsuarioCliente ,
              's_login' => $res->nombres.",".$res->apellidos );
 
-            $this->session->userdata($s_cliente);
+            $this->session->set_userdata($s_cliente);
             return 1;
         }else{
             return 0;

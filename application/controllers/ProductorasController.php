@@ -5,7 +5,9 @@ class ProductorasController extends CI_Controller{
     function __construct(){
         parent::__construct();
         $this->load->model('Productoras');
-    
+    $this->load->library('session');
+
+
     }
     
     function index(){
@@ -18,17 +20,18 @@ class ProductorasController extends CI_Controller{
     
     function guardar(){
         
-        $descripcion = array(
-            'descripcion' =>$this->input->post('descripcion')
-            );
+        $descripcion ['descripcion'] = $this->input->post('descripcion');
         
         $resul = $this->Productoras->guardar($descripcion);
         
-        if($resul == 1){
+        if($resul){
             echo "1";
         }else{
             echo "-1";
         }
     }
     
+
+  
+
 }

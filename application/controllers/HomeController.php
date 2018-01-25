@@ -13,6 +13,14 @@ class HomeController extends CI_Controller {
         $this->load->view('sitio/shared/footer');
     }
     
+    
+    function funciones(){
+        $this->load->view('sitio/shared/header');
+        $this->load->view('sitio/funciones');
+        $this->load->view('sitio/shared/footer');
+    }
+            
+    
     function nosotros(){
         $this->load->view('sitio/shared/header');
         $this->load->view('sitio/nosotros');

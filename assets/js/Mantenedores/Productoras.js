@@ -30,7 +30,7 @@ $("#termina").on("click", function() {
 			type : "POST",
 			data : postData,
 			success : function(data) {
-
+				
 				if (data === "1") {
 					$("#termina").css("display", "");
 					$("#cerrarAlerta").css("display", "none");

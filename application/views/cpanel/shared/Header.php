@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Panel de control</title>
-  <LINK REL="Shortcut Icon" HREF="img/icono.png">
+  <LINK REL="Shortcut Icon" HREF="<?php echo base_url();?>assets/img/icono.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -102,7 +102,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url();?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Usuario:  <?php echo $this->session->userdata('s_login');?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -119,7 +119,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url();?>PanelController/logueout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>

@@ -1,10 +1,10 @@
 <?php
 
-class Usuario_ClienteController  extends CI_Controller{
+class Usuario_clienteController  extends CI_Controller{
 
     function __construct(){
         parent::__construct();
-        $this->load->model('Cliente');
+        $this->load->model('Usuario_Cliente');
     }
     
     function registrarCliente(){
@@ -17,7 +17,13 @@ class Usuario_ClienteController  extends CI_Controller{
         $param['passcliente'] =  $this->input->post('Passwordcliente');
         $param['correocliente'] =  $this->input->post('Emailcliente');
 
-        $this->Cliente->guardar($param);
+        $this->Usuario_Cliente->guardar($param);
 
+
+
+          $this->load->view('sitio/shared/header');
+        $this->load->view('sitio/Home');
+        $this->load->view('sitio/shared/footer');
+        
     }
 }

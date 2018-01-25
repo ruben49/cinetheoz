@@ -5,6 +5,15 @@ class Perfil_UsuarioController extends CI_Controller {
 
     function __construct(){
         parent::__construct();
+   $this->load->library('session');
+
+if ($this->session->userdata('s_idUsuario')){
+
+
+redirect('loginpanel');
+
+
+    }
     }
 
     function index(){

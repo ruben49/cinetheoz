@@ -14,10 +14,10 @@
 
 
 <div style="text-align: center;">
-	 <img src="<?php echo base_url();?>img/SALA.JPG.JPG" style="width:500px; height:300px; ">
+	 <img src="<?php echo base_url();?>assets/img/SALA.JPG.JPG" style="width:500px; height:300px; ">
 	  <p>&nbsp;</p>
 	  <hr>
-<div ">
+<div >
 	Restaurant formato Cine-Café & Sushi / Tienda de Arriendo y Venta de películas (Videoclub) / Exhibición de películas
 	 <p>&nbsp;</p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac porttitor libero. Proin pretium ante ex, id pellentesque lectus dapibus egestas. Donec id bibendum turpis. Donec blandit fringilla pretium. Vestibulum vitae pharetra urna. Ut nec scelerisque nulla. Phasellus at purus scelerisque, convallis orci a, elementum ligula. Etiam sollicitudin enim in diam blandit, at rhoncus mauris blandit. Proin non nibh ipsum. Maecenas id lacus vitae orci cursus posuere. Etiam sollicitudin mi arcu, et iaculis eros fermentum a.

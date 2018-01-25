@@ -99,15 +99,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a href="index.php">Inicio</a>
+					<a href="<?php echo base_url();?>HomeController/index">Inicio</a>
 					·
 				
-					<a href="#">Funciones</a>
+					<a href="<?php echo base_url();?>HomeController/funciones">Funciones</a>
 					·
-					<a href="nosotros.php">Nosotros</a>
+					<a href="<?php echo base_url();?>HomeController/nosotros">Nosotros</a>
 					·
 				
-					<a href="contact.html">Contacto</a>
+					<a href="<?php echo base_url();?>HomeController/contacto">Contacto</a>
 				</p>
 
 				<p>The OZ CINECAFE &copy; 2018</p>

@@ -67,7 +67,7 @@
 
 	      <div style="clear:both"></div>
 	      <div class="modal-footer">
- 			 <button id="btnCreaProductora" name="btnCreaProductora" type="button" class="btn btn-primary">Crear Nueva Productora</button>
+ 			 <button id="btnCreaProductora" name="btnCreaProductora" href="<?php echo base_url();?>ProductorasController/guardar type="button" class="btn btn-primary">Crear Nueva Productora</button>
 	         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 	      </div>	      	
 	      	
