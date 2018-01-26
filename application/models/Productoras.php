@@ -25,14 +25,13 @@ class Productoras extends CI_Model{
     } 
 
     public function obtenerProductoras(){
-        $this->db->select('*');
-        $this->db->from('productoras');
-        
-        $query = $this->db->get();
+ 
+        $query = $this->db->query("select * from productoras");
+      
         
         if ( $query->num_rows() > 0 ){
       
-            $row = $query->row_array();
+            $row = $query->result_array();
             return $row;
         } 
          

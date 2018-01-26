@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
+ <link rel="stylesheet" href="<?php echo base_url();?>assets/css/buttons.dataTables.min.css" />" rel='stylesheet' type='text/css' />
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/dist/css/skins/_all-skins.min.css">
   <!-- Morris chart -->
@@ -41,6 +41,9 @@
   <!-- Bootstrap 3.3.7 -->
   <script src="<?php echo base_url();?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Morris.js charts -->
+  
+  <script src="<?php echo base_url();?>assets/js/dataTables/jquery.dataTables.js"></script>
+  <script src="<?php echo base_url();?>assets/js/dataTables/dataTables.bootstrap.js" ></script>
   <script src="<?php echo base_url();?>assets/bower_components/raphael/raphael.min.js"></script>
   <script src="<?php echo base_url();?>assets/bower_components/morris.js/morris.min.js"></script>
   <!-- Sparkline -->

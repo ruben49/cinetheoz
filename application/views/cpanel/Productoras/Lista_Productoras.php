@@ -26,7 +26,16 @@
     </div>
     
     
-    
+    <div class="col-xs-12">
+                 
+        <div class="panel-body" style="background: white">
+            <div class="table-responsive"><input type="hidden" id="auxElimina" value="">
+                <table id="listaProductoras" class="display table table-hover table-bordered" width="100%"></table>
+            </div>
+
+                   
+        </div>
+    </div>
     
     
     <!-- Main content -->
