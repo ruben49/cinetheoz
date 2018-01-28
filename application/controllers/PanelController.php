@@ -4,8 +4,8 @@ class PanelController extends CI_Controller{
 
     function __construct(){
         parent::__construct();
-    $this->load->model = array('Usuario_Cliente','Usuarios');
-$this->load->library('session');
+        $this->load->model = array('Usuario_Cliente','Usuarios');
+        $this->load->library('session');
 
 
     }

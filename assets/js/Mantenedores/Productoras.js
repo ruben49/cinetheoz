@@ -17,7 +17,7 @@ $("#termina").on("click", function() {
  	var descripcion = $('#descripcion').val();
 
 	if (descripcion === "") {
-		alerta("INFORMACI&Oacute;N", "Debe ingresar la descripci&oacute;n de la ubicaci&oacute;n");
+		alerta("INFORMACI&Oacute;N", "Debe ingresar la descripci&oacute;n de la productora");
 	} else {
 
 		var postData = {
@@ -78,45 +78,45 @@ function cargarLista(){
             url : formURL,
             type : "POST",
             success : function(data) {
-                    alert(data);
+                    console.log(data);
                     if (data != "") {
-                        
-                    $('#listaProductoras').dataTable({
-                        data: data,
-                        columns: [
-                                 { title: "ID" },
-                                 { title: "PRODUCTORA" },
-                                 { title: "OPCIONES" }
 
-                             ],	 
-                    language: {
-                        "sProcessing":    "Procesando...",
-                        "sLengthMenu":    "Mostrar _MENU_ Registros",
-                        "sZeroRecords":   "No se encontraron resultados",
-                        "sEmptyTable":    "Ningún dato disponible en esta tabla",
-                        "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                        "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
-                        "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
-                        "sInfoPostFix":   "",
-                        "sSearch":        "Buscar: ",
-                        "sUrl":           "",
-                        "sInfoThousands":  ",",
-                        "sLoadingRecords": "Cargando...",
-                        "oPaginate": {
-                            "sFirst":    "Primero",
-                            "sLast":    "Último",
-                            "sNext":    "Siguiente",
-                            "sPrevious": "Anterior"
-                        },
-                        oAria: {
-                            "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                            "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                        },
+                        $('#listaProductoras').dataTable({
+                            data: JSON.parse(data),
+                            columns: [
+                                     { title: "ID" },
+                                     { title: "PRODUCTORA" },
+                                     { title: "OPCIONES" }
 
-                        order: [[ 3, "desc" ]]
-                    }
+                                 ],	 
+                        language: {
+                            "sProcessing":    "Procesando...",
+                            "sLengthMenu":    "Mostrar _MENU_ Registros",
+                            "sZeroRecords":   "No se encontraron resultados",
+                            "sEmptyTable":    "Ningún dato disponible en esta tabla",
+                            "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                            "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
+                            "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
+                            "sInfoPostFix":   "",
+                            "sSearch":        "Buscar: ",
+                            "sUrl":           "",
+                            "sInfoThousands":  ",",
+                            "sLoadingRecords": "Cargando...",
+                            "oPaginate": {
+                                "sFirst":    "Primero",
+                                "sLast":    "Último",
+                                "sNext":    "Siguiente",
+                                "sPrevious": "Anterior"
+                            },
+                            oAria: {
+                                "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                            },
 
-                    });
+                            order: [[ 3, "desc" ]]
+                        }
+
+                        });
                     } else {
 
                             alerta("ERROR", "Error al cargar las poductoras");

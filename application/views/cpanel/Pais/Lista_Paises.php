@@ -5,20 +5,20 @@
  
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Perfiles de Usuario</li>
+        <li class="active">Paises</li>
       </ol>
     </section>
     
     <div class="row">
             <div class="col-md-12 text-center">
-                              <h2><span class="fa fa-2x"></span> Perfiles de Usuario registrados en el sistema</h2>
+                              <h2><span class="fa fa-2x"></span> Productoras registradas en el sistema</h2>
 
                 <hr>
             <div class="pull-right">
-                     <a class="btn btn-default" href="<?php echo base_url();?>Perfil_UsuarioController/index"><i class=" fa fa-refresh "></i> Actualizar</a>
+                     <a class="btn btn-default" href="<?php echo base_url();?>PaisController/index"><i class=" fa fa-refresh "></i> Actualizar</a>
             </div> 
                  <div class="pull-left"><input type="hidden" id="auxElimina" value="">
-                     <div id="abreNuevaProductora" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nuevo Perfil</div>
+                     <div id="abreNuevaProductora" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nuevo Pais</div>
                  </div> 
 
 
@@ -30,7 +30,7 @@
                  
         <div class="panel-body" style="background: white">
             <div class="table-responsive">
-                <table id="listaPerfiles" class="display table table-hover table-bordered" width="100%"></table>
+                <table id="listaProductoras" class="display table table-hover table-bordered" width="100%"></table>
             </div>
 
                    
@@ -45,12 +45,12 @@
   <!-- /.content-wrapper -->
   
   
-  	<div  class="modal fade bd-example-modal-lg" id="crearPerfil" tabindex="-1" role="dialog" aria-labelledby="crearPerfil" aria-hidden="true">
+  	<div  class="modal fade bd-example-modal-lg" id="crearPais" tabindex="-1" role="dialog" aria-labelledby="crearPais" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      	
 	 	  <div class="modal-header">
-	        <h2 align="center"><span class="fa fa-paperclip fa-1x"></span> Crear Nuevo Perfil</h2>   
+	        <h2 align="center"><span class="fa fa-paperclip fa-1x"></span> Crear Nuevo Pais</h2>   
 <!-- 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button> -->
@@ -59,9 +59,9 @@
 	        <div class="modal-body">
                     <div class="form-group">
                         <div class="col-lg-3">
-                            <label>Nombre del Perfil</label> <input
+                            <label>Nombre del Pais</label> <input
                                 type="text" class="form-control"
-                                placeholder="Ingrese el nombre del perfil" id="descripcion"
+                                placeholder="Ingrese la Productora" id="descripcion"
                                 name="descripcion" value="">
                         </div>       
 					                      
@@ -76,7 +76,7 @@
 
 	      <div style="clear:both"></div>
 	      <div class="modal-footer">
- 			 <button id="btnCreaPerfil" name="btnCreaPerfil" href="<?php echo base_url();?>Perfil_UsuarioController/guardar" type="button" class="btn btn-primary">Crear Nuevo Perfil</button>
+ 			 <button id="btnCreaPais" name="btnCreaPais" href="<?php echo base_url();?>PaisController/guardar" type="button" class="btn btn-primary">Crear Nuevo Pais</button>
 	         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 	      </div>	      	
 	      	
@@ -86,4 +86,4 @@
 	</div>
   
   
-    <script src="<?php echo base_url();?>assets/js/Mantenedores/Perfil_Usuario.js"></script>
+    <script src="<?php echo base_url();?>assets/js/Mantenedores/Pais.js"></script>

@@ -33,16 +33,22 @@ class ProductorasController extends CI_Controller{
     public function obtenerProductoras(){
          
         $datos = $this->Productoras->obtenerProductoras();
-     
-        $listaProductoras = "";
-        $product = "";
-        foreach($datos as $productora){
-            $product = "[".$productora['idProductora'].",".$productora['descripcion'].","."<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$productora['idProductora'].
-            ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>],";
-             $listaProductoras.$product;
-  }
+        $listaProductoras  = array();
+        $aux = array();
         
-        echo  $listaProductoras;
+        foreach($datos as $productora){
+            
+            $aux = array(
+                $productora['idProductora'],$productora['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$productora['idProductora'].
+            ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>",
+            );
+           
+            array_push($listaProductoras, $aux);
+            
+            
+            }
+        
+        echo json_encode($listaProductoras);
         
     }
 

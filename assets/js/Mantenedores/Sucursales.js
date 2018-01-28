@@ -1,7 +1,7 @@
 cargarLista();
 
-$("#abreNuevoGenero").on("click", function() {
-	$('#crearGenero').modal({
+$("#abreNuevaSucursal").on("click", function() {
+	$('#crearSucursal').modal({
 		backdrop : 'static',
 		keyboard : false,
 		show : true
@@ -9,22 +9,22 @@ $("#abreNuevoGenero").on("click", function() {
 });
 
 $("#termina").on("click", function() {
-	$('#crearGenero').modal('hide');
+	$('#crearSucursal').modal('hide');
 	location.reload();
 });
 
- $("#btnCreaGenero").on("click", function() {
+ $("#btnCreaSucursal").on("click", function() {
  	var descripcion = $('#descripcion').val();
 
 	if (descripcion === "") {
-		alerta("INFORMACI&Oacute;N", "Debe ingresar la descripci&oacute;n del g&eacute;nero");
+		alerta("INFORMACI&Oacute;N", "Debe ingresar la descripci&oacute;n de la sucursal");
 	} else {
 
 		var postData = {
 			descripcion : descripcion
 		};
 
-		var formURL = "/cinetheoz/GeneroController/guardar";
+		var formURL = "/cinetheoz/SucursalesController/guardar";
 		$('#crearSucursal').modal('hide');
 		$.ajax({
 			url : formURL,
@@ -36,18 +36,18 @@ $("#termina").on("click", function() {
 					$("#termina").css("display", "");
 					$("#cerrarAlerta").css("display", "none");
 
-					alerta("INFORMACI&Oacute;N", "G&eacute;nero creado con &eacute;xito");
+					alerta("INFORMACI&Oacute;N", "Sucursal creada con &eacute;xito");
 
 					$("#termina").focus();
 				} else {
 
-					alerta("ERROR", "Error al intentar crear el g&eacute;nero");
+					alerta("ERROR", "Error al intentar crear la sucursal");
 				}
 
 			},
 			error : function(e) {
 
-				alerta("ERROR", "Error al intentar crear el g&eacute;nero : " + e.status);
+				alerta("ERROR", "Error al intentar crear la sucursal : " + e.status);
 			}
 		});
 	}
@@ -72,7 +72,7 @@ function alerta(titulo, contenido) {
 
 function cargarLista(){
      
-    var formURL = "/cinetheoz/GeneroController/obtenerGeneros";
+    var formURL = "/cinetheoz/SucursalesController/obtenerSucursales";
 
     $.ajax({
             url : formURL,
@@ -81,11 +81,11 @@ function cargarLista(){
                     console.log(data);
                     if (data != "") {
 
-                        $('#listaGeneros').dataTable({
+                        $('#listaSucursales').dataTable({
                             data: JSON.parse(data),
                             columns: [
                                      { title: "ID" },
-                                     { title: "G&Eacute;NERO" },
+                                     { title: "PRODUCTORA" },
                                      { title: "OPCIONES" }
 
                                  ],	 
@@ -119,13 +119,13 @@ function cargarLista(){
                         });
                     } else {
 
-                            alerta("ERROR", "Error al cargar los g&eacute;neros");
+                            alerta("ERROR", "Error al cargar las sucursales");
                     }
 
             },
             error : function(e) {
 
-                    alerta("ERROR", "Error al intentar cargar los g&eacute;neros de pel&iacute;cula: " + e.status);
+                    alerta("ERROR", "Error al intentar cargar las sucursales: " + e.status);
             }
     });
     

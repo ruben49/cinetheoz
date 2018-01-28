@@ -8,13 +8,33 @@ class Distribuidoras extends CI_Model{
 
     }
     
-    
     public function guardar($param){
         $campos = array(
-        'descripcion' =>  $param['descripcion']
-        );
+            'descripcion' =>  $param['descripcion']
+        );	
+        $this->db->insert('distribuidoras', $campos);   
 
-        $this-> db->insert('descripcion', $campos);   
+        if($this->db->affected_rows() > 0)
+        {
+
+            return true; 
+        }else {
+            return false;
+        }
+
+    } 
+
+    public function obtenerDistribuidoras(){
+ 
+        $query = $this->db->query("select * from distribuidoras");
+      
+        
+        if ( $query->num_rows() > 0 ){
+      
+            $row = $query->result_array();
+            return $row;
+        } 
+         
     }
     
     

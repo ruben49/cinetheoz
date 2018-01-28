@@ -17,7 +17,7 @@
             <div class="pull-right">
                      <a class="btn btn-default" href="<?php echo base_url();?>ProductorasController/index"><i class=" fa fa-refresh "></i> Actualizar</a>
             </div> 
-                 <div class="pull-left">
+                 <div class="pull-left"><input type="hidden" id="auxElimina" value="">
                      <div id="abreNuevaProductora" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nueva Productora</div>
                  </div> 
 
@@ -29,7 +29,7 @@
     <div class="col-xs-12">
                  
         <div class="panel-body" style="background: white">
-            <div class="table-responsive"><input type="hidden" id="auxElimina" value="">
+            <div class="table-responsive">
                 <table id="listaProductoras" class="display table table-hover table-bordered" width="100%"></table>
             </div>
 
@@ -76,7 +76,7 @@
 
 	      <div style="clear:both"></div>
 	      <div class="modal-footer">
- 			 <button id="btnCreaProductora" name="btnCreaProductora" href="<?php echo base_url();?>ProductorasController/guardar type="button" class="btn btn-primary">Crear Nueva Productora</button>
+ 			 <button id="btnCreaProductora" name="btnCreaProductora" href="<?php echo base_url();?>ProductorasController/guardar" type="button" class="btn btn-primary">Crear Nueva Productora</button>
 	         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 	      </div>	      	
 	      	
