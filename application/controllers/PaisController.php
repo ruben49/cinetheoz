@@ -38,20 +38,25 @@ class PaisController extends CI_Controller {
         $listaPaises  = array();
         $aux = array();
         
-        foreach($datos as $pais){
-            
-            $aux = array(
-                $pais['idPais'],$pais['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$pais['idPais'].
-            ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>",
-            );
-           
-            array_push($listaPaises, $aux);
-            
-            
-            }
         
-        echo json_encode($listaPaises);
-        
+        if($datos != '0'){
+            foreach($datos as $pais){
+
+                $aux = array(
+                    $pais['idPais'],$pais['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$pais['idPais'].
+                ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>",
+                );
+
+                array_push($listaPaises, $aux);
+
+
+                }
+         }
+ 
+            echo json_encode($listaPaises);
+   
+   
+   
     }
     
     

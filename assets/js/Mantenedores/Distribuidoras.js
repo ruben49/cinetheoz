@@ -25,7 +25,7 @@ $("#termina").on("click", function() {
 		};
 
 		var formURL = "/cinetheoz/DistribuidoraController/guardar";
-		$('#crearSucursal').modal('hide');
+		$('#crearDistribuidora').modal('hide');
 		$.ajax({
 			url : formURL,
 			type : "POST",
@@ -72,14 +72,14 @@ function alerta(titulo, contenido) {
 
 function cargarLista(){
      
-    var formURL = "/cinetheoz/DistribuidoraController/obtenerDistribuidoras";
+    var formURL = "/cinetheoz/DistribuidorasController/obtenerDistribuidoras";
 
     $.ajax({
             url : formURL,
             type : "POST",
             success : function(data) {
-                    console.log(data);
-                    if (data != "") {
+                     
+                    if (data !== "") {
 
                         $('#listaDistribuidoras').dataTable({
                             data: JSON.parse(data),

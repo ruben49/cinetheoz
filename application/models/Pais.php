@@ -33,7 +33,9 @@ class Pais extends CI_Model{
       
             $row = $query->result_array();
             return $row;
-        } 
+        } else{
+            return "0";
+        }
          
     }
 }

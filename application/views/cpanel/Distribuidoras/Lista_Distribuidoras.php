@@ -18,7 +18,7 @@
                      <a class="btn btn-default" href="<?php echo base_url();?>DistribuidorasController/index"><i class=" fa fa-refresh "></i> Actualizar</a>
             </div> 
                  <div class="pull-left"><input type="hidden" id="auxElimina" value="">
-                     <div id="abreNuevaProductora" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nueva Productora</div>
+                     <div id="abreNuevaDistribuidora" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nueva Distribuidora</div>
                  </div> 
 
 
@@ -30,7 +30,7 @@
                  
         <div class="panel-body" style="background: white">
             <div class="table-responsive">
-                <table id="listaProductoras" class="display table table-hover table-bordered" width="100%"></table>
+                <table id="listaDistribuidoras" class="display table table-hover table-bordered" width="100%"></table>
             </div>
 
                    

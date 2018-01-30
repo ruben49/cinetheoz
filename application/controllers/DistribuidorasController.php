@@ -18,7 +18,7 @@ class DistribuidorasController extends CI_Controller {
         $this->load->view('cpanel/shared/Footer');
     }
     
-        function guardar(){
+    function guardar(){
         
         $descripcion ['descripcion'] = $this->input->post('descripcion');
         
@@ -37,7 +37,8 @@ class DistribuidorasController extends CI_Controller {
         $listaDistribuidoras  = array();
         $aux = array();
         
-        foreach($datos as $distribuidora){
+        if($datos != '0'){
+            foreach($datos as $distribuidora){
             
             $aux = array(
                 $distribuidora['idDistribuidora'],$distribuidora['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$distribuidora['idDistribuidora'].
@@ -48,8 +49,12 @@ class DistribuidorasController extends CI_Controller {
             
             
             }
-        
-        echo json_encode($listaDistribuidoras);
-        
+            
+        } 
+ 
+            echo json_encode($listaDistribuidoras);
+            
+ 
+             
     }
 }

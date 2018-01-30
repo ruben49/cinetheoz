@@ -24,14 +24,15 @@ class Genero extends CI_Model{
 
     public function obtenerGeneros(){
  
-        $query = $this->db->query("select * from genero");
-      
-        
+        $query = $this->db->query("select * from genero"); 
         if ( $query->num_rows() > 0 ){
       
             $row = $query->result_array();
             return $row;
-        } 
+        }else{
+            return "0";
+        }
+         
          
     }
 }

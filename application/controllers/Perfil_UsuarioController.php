@@ -37,6 +37,7 @@ class Perfil_UsuarioController extends CI_Controller {
         $listaPerfiles = array();
         $aux = array();
         
+        if($datos != '0'){
         foreach($datos as $perfil){
             
             $aux = array(
@@ -48,8 +49,10 @@ class Perfil_UsuarioController extends CI_Controller {
             
             
             }
-        
-        echo json_encode($listaPerfiles);
+        }
+ 
+            echo json_encode($listaPerfiles);
+ 
         
     }
 }

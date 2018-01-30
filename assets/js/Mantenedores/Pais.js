@@ -79,8 +79,8 @@ function cargarLista(){
             url : formURL,
             type : "POST",
             success : function(data) {
-                    console.log(data);
-                    if (data != "") {
+             
+                    if (data !== "") {
 
                         $('#listaPaises').dataTable({
                             data: JSON.parse(data),

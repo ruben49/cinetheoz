@@ -46,10 +46,14 @@ class SucursalesController extends CI_Controller {
            
             array_push($listaSucursales, $aux);
             
-            
-            }
-        
-        echo json_encode($listaSucursales);
+        } 
+ 
+        if(count($listaSucursales) == 0){
+            $listaSucursales = array();
+            echo json_encode($listaSucursales);
+        }else{
+            echo json_encode($listaSucursales);
+        }
         
     }
 }

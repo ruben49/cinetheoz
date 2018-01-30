@@ -5,20 +5,20 @@
  
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Productoras</li>
+        <li class="active">Sucursales</li>
       </ol>
     </section>
     
     <div class="row">
             <div class="col-md-12 text-center">
-                              <h2><span class="fa fa-2x"></span> Productoras registradas en el sistema</h2>
+                              <h2><span class="fa fa-2x"></span> Sucursales registradas en el sistema</h2>
 
                 <hr>
             <div class="pull-right">
                      <a class="btn btn-default" href="<?php echo base_url();?>SucursalesController/index"><i class=" fa fa-refresh "></i> Actualizar</a>
             </div> 
                  <div class="pull-left"><input type="hidden" id="auxElimina" value="">
-                     <div id="abreNuevaSucursal" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nueva Productora</div>
+                     <div id="abreNuevaSucursal" class="btn btn-default" data-toggle="modal" style="margin-left:16%;"><i class="fa fa-plus-circle"></i> Crear Nueva Sucursal</div>
                  </div> 
 
 

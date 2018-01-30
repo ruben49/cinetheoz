@@ -78,8 +78,8 @@ function cargarLista(){
             url : formURL,
             type : "POST",
             success : function(data) {
-                    console.log(data);
-                    if (data != "") {
+                    
+                    if (data !== "") {
 
                         $('#listaProductoras').dataTable({
                             data: JSON.parse(data),

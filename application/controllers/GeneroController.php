@@ -37,19 +37,24 @@ class GeneroController extends CI_Controller {
         $listaGeneros  = array();
         $aux = array();
         
-        foreach($datos as $genero){
+        
+        if($datos != '0'){
             
-            $aux = array(
-                $genero['idGenero'],$genero['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$genero['idGenero'].
-            ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>",
-            );
-           
-            array_push($listaGeneros, $aux);
+            foreach($datos as $genero){
+            
+                $aux = array(
+                    $genero['idGenero'],$genero['descripcion'], "<a class='btn btn-default btn-xs'><spam class='fa fa-edit fa-2x' title='Editar'></spam></a><div onClick=eliminar(".$genero['idGenero'].
+                ") class='btn btn-default btn-xs'><spam class='fa fa-trash-o fa-2x' title='Eliminar'></spam></div>",
+                );
+
+                 array_push($listaGeneros, $aux);
             
             
             }
-        
-        echo json_encode($listaGeneros);
+        }       
+ 
+            echo json_encode($listaGeneros);
+ 
         
     }
     

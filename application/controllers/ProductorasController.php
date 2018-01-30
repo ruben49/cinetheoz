@@ -36,6 +36,8 @@ class ProductorasController extends CI_Controller{
         $listaProductoras  = array();
         $aux = array();
         
+        
+        if($datos != '0'){
         foreach($datos as $productora){
             
             $aux = array(
@@ -47,8 +49,9 @@ class ProductorasController extends CI_Controller{
             
             
             }
-        
-        echo json_encode($listaProductoras);
+        }
+ 
+        echo json_encode($listaProductoras); 
         
     }
 

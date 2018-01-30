@@ -11,7 +11,7 @@
     
     <div class="row">
             <div class="col-md-12 text-center">
-                              <h2><span class="fa fa-2x"></span> Productoras registradas en el sistema</h2>
+                              <h2><span class="fa fa-2x"></span> Paises registrados en el sistema</h2>
 
                 <hr>
             <div class="pull-right">
@@ -30,7 +30,7 @@
                  
         <div class="panel-body" style="background: white">
             <div class="table-responsive">
-                <table id="listaProductoras" class="display table table-hover table-bordered" width="100%"></table>
+                <table id="listaPaises" class="display table table-hover table-bordered" width="100%"></table>
             </div>
 
                    

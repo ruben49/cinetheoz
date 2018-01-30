@@ -78,14 +78,14 @@ function cargarLista(){
             url : formURL,
             type : "POST",
             success : function(data) {
-                    console.log(data);
+                  
                     if (data != "") {
 
                         $('#listaSucursales').dataTable({
                             data: JSON.parse(data),
                             columns: [
                                      { title: "ID" },
-                                     { title: "PRODUCTORA" },
+                                     { title: "SUCURSAL" },
                                      { title: "OPCIONES" }
 
                                  ],	 
