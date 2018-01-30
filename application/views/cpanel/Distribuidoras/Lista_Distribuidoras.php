@@ -76,8 +76,8 @@
 
 	      <div style="clear:both"></div>
 	      <div class="modal-footer">
- 			 <button id="btnCreaDistribuidora" name="btnCreaDistribuidora" href="<?php echo base_url();?>DistribuidorasController/guardar" type="button" class="btn btn-primary">Crear Nueva Distribuidora</button>
-	         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button id="btnCreaDistribuidora" name="btnCreaDistribuidora" href="<?php echo base_url();?>DistribuidorasController/guardar" type="button" class="btn btn-primary">Crear Nueva Distribuidora</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 	      </div>	      	
 	      	
 	      	
